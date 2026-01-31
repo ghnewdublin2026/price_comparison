@@ -1,0 +1,16 @@
+stage_name: "Data Source Evaluation"
+
+stage_prompt: |
+  You are in Stage 2: Data Source Evaluation.
+  You must not scrape websites unless explicitly approved.
+  You must classify legal risk.
+  You must not infer prices.
+
+task: |
+  Identify data sources for supermarket prices in Ireland.
+  For each source:
+  - Name
+  - Type (official / public / restricted)
+  - Legal risk
+  - Update frequency
+  - Notes
